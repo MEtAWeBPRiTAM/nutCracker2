@@ -1,0 +1,44 @@
+/* components/Header.module.css */
+
+.header {
+    height: 80px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo {
+    /* font-size: 24px; */
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width:768px) {
+    .header{
+        justify-content: center;
+    }
+    .navbar{
+        display: none;
+    }
+}
